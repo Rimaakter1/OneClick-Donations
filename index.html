@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -9,13 +9,41 @@
     <!-- tailwind and daisy ui cdn Link  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#B4F461',
+                        bg_color: '#F9F7F3',
+                        secondary: '#111111',
+                        accent: 'rgba(17, 17, 17, 0.7)'
+                    }
+                }
+            }
+        }
+    </script>
+
 </head>
 
 <body>
 
     <!-- header  -->
-    <header>
-
+    <header class="bg-bg_color pt-5 pb-12">
+        <nav class="navbar w-11/12 md:w-10/12 mx-auto">
+            <div class="navbar-start">
+                <a class="btn bg-primary text-xl font-semibold">Blog</a>
+            </div>
+            <div class="navbar-center flex items-center">
+                <img src="./assets/logo.png" alt="">
+                <h5 class="text-xl text-secondary font-semibold ml-3">OneClick Donations</h5>
+            </div>
+            <div class="navbar-end items-center">
+                <img src="./assets/coin.png" alt="">
+                <p class="text-xl text-accent font-medium ml-3">5500</p>
+            </div>
+        </nav>
     </header>
     <!-- header end  -->
 
