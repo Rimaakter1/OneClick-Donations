@@ -21,7 +21,7 @@ for (const donateAmountButton of AllDonateAmountButton) {
         const donateAmount = e.target.parentNode.children[0];
         const donateAmountNumber = parseFloat(donateAmount.value);
 
-        if (donateAmountNumber < 0 || isNaN(donateAmountNumber) || donateAmountNumber === "") {
+        if (donateAmountNumber <= 0 || isNaN(donateAmountNumber) || donateAmountNumber === "") {
             alert('Invalid donation amount');
             clearInputField(donateAmount)
             return;
