@@ -22,7 +22,7 @@ for (const donateAmountButton of AllDonateAmountButton) {
         const donateAmountNumber = parseFloat(donateAmount.value);
 
         if (donateAmountNumber <= 0 || isNaN(donateAmountNumber) || donateAmountNumber === "") {
-            alert('Invalid donation amount');
+            alert('Invalid donation amount or insufficient donation amount');
             clearInputField(donateAmount)
             return;
         }
