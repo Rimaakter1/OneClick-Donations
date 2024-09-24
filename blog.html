@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <!-- tailwind and daisy ui cdn Link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="sticky top-0 z-10 ">
+        <nav>
+            <div class="bg-bg_color py-4 bg-opacity-85 backdrop-blur-md transition-all duration-300 z-20">
+                <div class="navbar flex-col md:flex-row w-11/12 md:w-10/12 mx-auto  ">
+                    <div class="navbar-start w-full md:w-1/2">
+                        <a href="blog.html"
+                            class="btn bg-primary text-xl font-semibold px-8 py-3 border-0 w-full md:w-1/4">Blog</a>
+                    </div>
+                    <div class="navbar-center flex items-center">
+                        <img src="./assets/logo.png" alt="">
+                        <h5 class="text-xl text-secondary font-semibold ml-3">OneClick Donations</h5>
+                    </div>
+                    <div class="navbar-end items-center">
+                        <img src="./assets/coin.png" alt="">
+                        <p id="available-balance" class="text-xl text-accent font-medium ml-3">5500</p>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="flex items-center justify-center bg-white pt-8 pb-6 bg-opacity-70 backdrop-blur-md shadow-md transition-all duration-300 z-20">
+                <button id="donation-btn"
+                    class=" bg-primary text-secondary text-xl font-semibold border-0 rounded-lg px-8 py-4 mr-4">Donation</button>
+                <button id="donate-history-btn"
+                    class="text-accent text-xl font-medium border border-gray-400 rounded-lg px-8 py-4">History</button>
+            </div>
+        </nav>
+
+
+    </header>
+</body>
+
+</html>

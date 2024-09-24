@@ -37,7 +37,8 @@ for (const donateAmountButton of AllDonateAmountButton) {
         const currentBalance = availableBalanceAmount - donateAmountNumber;
         availableBalance.innerText = currentBalance;
         const totalDonateAmount = e.target.parentNode.parentNode.children[0].children[1].children[0];
-        const totalDonateAmountNumber = parseFloat(totalDonateAmount.innerText)
+        const totalDonateAmountNumber = parseFloat(totalDonateAmount.innerText);
+        my_modal_1.showModal();
         totalDonateAmount.innerText = totalDonateAmountNumber + donateAmountNumber;
 
 
