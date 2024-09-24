@@ -16,7 +16,7 @@ function handleToggleButton(historyBtn, donationBtn, hisotryId, cardsId) {
 function handleDonationHistory(historyListId, donatationAmount, title) {
     const donationHistoryList = document.getElementById(historyListId);
     const HistoryDiv = document.createElement('div');
-    HistoryDiv.classList.add('border', 'border-gray-300', 'p-8', 'rounded-2xl', 'mb-6')
+    HistoryDiv.classList.add('border', 'border-gray-300', 'p-4', 'md:p-8', 'rounded-2xl', 'mb-6')
 
     HistoryDiv.innerHTML = `
             <h2 class="text-xl font-bold  mb-4 text-secondary">${donatationAmount} Taka ${title}

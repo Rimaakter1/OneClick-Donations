@@ -30,15 +30,15 @@
         <nav>
             <div class="bg-bg_color py-4 bg-opacity-85 backdrop-blur-md transition-all duration-300 z-20">
                 <div class="navbar flex-col md:flex-row w-11/12 md:w-10/12 mx-auto  ">
-                    <div class="navbar-start w-full md:w-1/2">
+                    <div class="navbar-start w-full md:w-1/2 order-2 md:order-none mb-4 md:mb-0">
                         <a href="index.html"
-                            class="btn bg-primary text-xl font-semibold px-8 py-3 border-0 w-full md:w-1/4">Home</a>
+                            class="btn bg-primary text-xl font-semibold border-0 w-full md:w-1/4 ">Home</a>
                     </div>
-                    <div class="navbar-center flex items-center">
+                    <div class="navbar-center flex items-center order-1 md:order-none mb-4 md:mb-0">
                         <img src="./assets/logo.png" alt="">
-                        <h5 class="text-xl text-secondary font-semibold ml-3">OneClick Donations</h5>
+                        <h5 class="text-xl text-secondary font-semibold ml-3 ">OneClick Donations</h5>
                     </div>
-                    <div class="navbar-end items-center">
+                    <div class="navbar-end items-center order-3 md:order-none">
                         <img src="./assets/coin.png" alt="">
                         <p id="available-balance" class="text-xl text-accent font-medium ml-3">5500</p>
                     </div>
@@ -52,18 +52,18 @@
     <!-- main start  -->
     <main>
         <section class="w-11/12 md:w-10/12 mx-auto mt-10">
-            <div class="card shadow-md bg-slate-50 p-10 mb-5">
+            <div class="card shadow-md bg-slate-50 p-4 md:p-8 lg:p-10 mb-5">
                 <h1 class="text-2xl font-bold text-secondary mb-4">What is the Document Object Model (DOM)?</h1>
                 <p class="text-accent text-lg">The Document Object Model (DOM) is a programming interface that
                     represents an HTML document as
                     a tree structure. It allows programming languages like JavaScript to interact with, access, and
                     manipulate elements, attributes, and content on a web page dynamically. </p>
             </div>
-            <div class="card shadow-md bg-slate-50 p-10 mb-5">
+            <div class="card shadow-md bg-slate-50 p-4 md:p-8 lg:p-10 mb-5">
                 <h1 class="text-2xl font-bold text-secondary mb-4">How do you select an element from the DOM?</h1>
                 <p class="text-accent text-lg mb-3">I can select an element from the DOM using some methods. such as :
                 </p>
-                <ol class="text-accent text-lg list-decimal	pl-4">
+                <ol class="text-accent  md:text-lg list-decimal pl-2 md:pl-4">
                     <li>document.getElementById() method selects an element by its id</li>
                     <li>document.getElementsByClassName() method select elements by class name </li>
                     <li>document.getElementsByTagName() select elements by tag name</li>
@@ -71,7 +71,7 @@
                     <li>document.querySelectorAll() selects all elements that match a given CSS selector.</li>
                 </ol>
             </div>
-            <div class="card shadow-md bg-slate-50 p-10 mb-5">
+            <div class="card shadow-md bg-slate-50 p-4 md:p-8 lg:p-10  mb-5">
                 <h1 class="text-2xl font-bold text-secondary mb-4">What is event delegation in the context of the DOM,
                     and why is it useful?</h1>
                 <p class="text-accent text-lg">Event delegation is a way to manage events in JavaScript by adding one
@@ -82,7 +82,7 @@
                     dynamic content, and keeps the code cleaner and simpler.
                 </p>
             </div>
-            <div class="card shadow-md bg-slate-50 p-10 mb-5">
+            <div class="card shadow-md bg-slate-50 p-4 md:p-8 lg:p-10  mb-5">
                 <h1 class="text-2xl font-bold text-secondary mb-4">How do you manipulate an element's attributes and
                     styles using the DOM?</h1>
                 <p class="text-accent text-lg mb-4"> I will manipulate an element's attributes and styles using the DOM
@@ -114,6 +114,12 @@
         </section>
     </main>
     <!-- main end  -->
+
+    <!-- footer start  -->
+    <footer class="bg-bg_color h-24 mt-20">
+
+    </footer>
+    <!-- footer end  -->
 </body>
 
 </html>

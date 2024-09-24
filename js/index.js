@@ -40,7 +40,7 @@ for (const donateAmountButton of AllDonateAmountButton) {
         const totalDonateAmountNumber = parseFloat(totalDonateAmount.innerText);
         my_modal_1.showModal();
         totalDonateAmount.innerText = totalDonateAmountNumber + donateAmountNumber;
-
+        donateAmount.value = "";
 
         // donation history
         const locationTitle = e.target.parentNode.parentNode.children[1].innerText;
