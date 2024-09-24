@@ -11,12 +11,23 @@ function handleToggleButton(historyBtn, donationBtn, hisotryId, cardsId) {
     document.getElementById(cardsId).classList.add('hidden');
 }
 
+
+// convert string to number
+function convertValueIntoNumber(string) {
+    const number = parseFloat(string.innerText);
+    return number;
+}
+
+function clearInputField(inputField) {
+    inputField.value = "";
+}
+
 // donation history list function
 
 function handleDonationHistory(historyListId, donatationAmount, title) {
     const donationHistoryList = document.getElementById(historyListId);
     const HistoryDiv = document.createElement('div');
-    HistoryDiv.classList.add('border', 'border-gray-300', 'p-4', 'md:p-8', 'rounded-2xl', 'mb-6')
+    HistoryDiv.classList.add('border', 'border-gray-300', 'p-4', 'md:p-8', 'rounded-2xl', 'mb-6', 'bg-white')
 
     HistoryDiv.innerHTML = `
             <h2 class="text-xl font-bold  mb-4 text-secondary">${donatationAmount} Taka ${title}

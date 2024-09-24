@@ -23,24 +23,32 @@ for (const donateAmountButton of AllDonateAmountButton) {
 
         if (donateAmountNumber < 0 || isNaN(donateAmountNumber) || donateAmountNumber === "") {
             alert('Invalid donation amount');
+            clearInputField(donateAmount)
             return;
         }
 
         const availableBalance = document.getElementById('available-balance');
-        const availableBalanceAmount = parseFloat(availableBalance.innerText);
+
+        const availableBalanceAmount = convertValueIntoNumber(availableBalance);
 
         if (availableBalanceAmount < donateAmountNumber) {
             alert('Insufficient amount in your account');
+            clearInputField(donateAmount)
             return;
         }
 
         const currentBalance = availableBalanceAmount - donateAmountNumber;
         availableBalance.innerText = currentBalance;
+
         const totalDonateAmount = e.target.parentNode.parentNode.children[0].children[1].children[0];
-        const totalDonateAmountNumber = parseFloat(totalDonateAmount.innerText);
+        const totalDonateAmountNumber = convertValueIntoNumber(totalDonateAmount);
+
+        // modal function 
         my_modal_1.showModal();
+
+
         totalDonateAmount.innerText = totalDonateAmountNumber + donateAmountNumber;
-        donateAmount.value = "";
+        clearInputField(donateAmount)
 
         // donation history
         const locationTitle = e.target.parentNode.parentNode.children[1].innerText;
