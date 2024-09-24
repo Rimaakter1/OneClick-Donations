@@ -8,6 +8,21 @@
     <!-- tailwind and daisy ui cdn Link  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#B4F461',
+                        bg_color: '#F9F7F3',
+                        secondary: '#111111',
+                        accent: 'rgba(17, 17, 17, 0.7)'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -16,8 +31,8 @@
             <div class="bg-bg_color py-4 bg-opacity-85 backdrop-blur-md transition-all duration-300 z-20">
                 <div class="navbar flex-col md:flex-row w-11/12 md:w-10/12 mx-auto  ">
                     <div class="navbar-start w-full md:w-1/2">
-                        <a href="blog.html"
-                            class="btn bg-primary text-xl font-semibold px-8 py-3 border-0 w-full md:w-1/4">Blog</a>
+                        <a href="index.html"
+                            class="btn bg-primary text-xl font-semibold px-8 py-3 border-0 w-full md:w-1/4">Home</a>
                     </div>
                     <div class="navbar-center flex items-center">
                         <img src="./assets/logo.png" alt="">
@@ -29,17 +44,76 @@
                     </div>
                 </div>
             </div>
-            <div
-                class="flex items-center justify-center bg-white pt-8 pb-6 bg-opacity-70 backdrop-blur-md shadow-md transition-all duration-300 z-20">
-                <button id="donation-btn"
-                    class=" bg-primary text-secondary text-xl font-semibold border-0 rounded-lg px-8 py-4 mr-4">Donation</button>
-                <button id="donate-history-btn"
-                    class="text-accent text-xl font-medium border border-gray-400 rounded-lg px-8 py-4">History</button>
-            </div>
+
         </nav>
 
 
     </header>
+    <!-- main start  -->
+    <main>
+        <section class="w-11/12 md:w-10/12 mx-auto mt-10">
+            <div class="card shadow-md bg-slate-50 p-10 mb-5">
+                <h1 class="text-2xl font-bold text-secondary mb-4">What is the Document Object Model (DOM)?</h1>
+                <p class="text-accent text-lg">The Document Object Model (DOM) is a programming interface that
+                    represents an HTML document as
+                    a tree structure. It allows programming languages like JavaScript to interact with, access, and
+                    manipulate elements, attributes, and content on a web page dynamically. </p>
+            </div>
+            <div class="card shadow-md bg-slate-50 p-10 mb-5">
+                <h1 class="text-2xl font-bold text-secondary mb-4">How do you select an element from the DOM?</h1>
+                <p class="text-accent text-lg mb-3">I can select an element from the DOM using some methods. such as :
+                </p>
+                <ol class="text-accent text-lg list-decimal	pl-4">
+                    <li>document.getElementById() method selects an element by its id</li>
+                    <li>document.getElementsByClassName() method select elements by class name </li>
+                    <li>document.getElementsByTagName() select elements by tag name</li>
+                    <li> document.querySelector() selects the first element that matches a CSS selector</li>
+                    <li>document.querySelectorAll() selects all elements that match a given CSS selector.</li>
+                </ol>
+            </div>
+            <div class="card shadow-md bg-slate-50 p-10 mb-5">
+                <h1 class="text-2xl font-bold text-secondary mb-4">What is event delegation in the context of the DOM,
+                    and why is it useful?</h1>
+                <p class="text-accent text-lg">Event delegation is a way to manage events in JavaScript by adding one
+                    event listener to a parent element instead of adding listeners to each child element. When a child
+                    element is clicked, the event bubbles up to the parent, which can then handle the event.
+                    <br>
+                    It is useful because the method reduces the number of event listeners needed, works well with
+                    dynamic content, and keeps the code cleaner and simpler.
+                </p>
+            </div>
+            <div class="card shadow-md bg-slate-50 p-10 mb-5">
+                <h1 class="text-2xl font-bold text-secondary mb-4">How do you manipulate an element's attributes and
+                    styles using the DOM?</h1>
+                <p class="text-accent text-lg mb-4"> I will manipulate an element's attributes and styles using the DOM
+                    with
+                    the following methods: </p>
+
+                <p class="text-accent text-lg">For manipulate and element's attributes: </p>
+
+
+                <ol class="text-accent text-lg list-decimal	pl-4 mb-4">
+                    <li><span class="font-extrabold">getAttribute():</span> To retrieve the value of an attribute. </li>
+                    <li><span class="font-extrabold">setAttribute():</span>To change the value of an attribute or add
+                        a new one. </li>
+                    <li><span class="font-extrabold">removeAttribute() :</span> to remove an attribute.</li>
+                </ol>
+
+                <p class="text-accent text-lg mb-4">For manipulate and element's styles: </p>
+                <ol class="text-accent text-lg list-decimal	pl-4">
+                    <li> Modify inline styles with element.style (e.g., element.style.color = 'blue').
+                    </li>
+                    <li>Add or remove CSS classes with classList.add(), classList.remove()</li>
+
+                </ol>
+
+
+            </div>
+
+
+        </section>
+    </main>
+    <!-- main end  -->
 </body>
 
 </html>
